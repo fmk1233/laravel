@@ -20,4 +20,4 @@ Route::name('front.index')->get('/',function(){
 });
 Route::get('/user', function(){
 	return view('welcome');
-});
+})->middleware("token");
