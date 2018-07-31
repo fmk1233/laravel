@@ -15,9 +15,11 @@
 //     //return view('welcome');
 //     return view('index');
 // });
-Route::name('front.index')->get('/',function(){
-	return view("index");
-});
+// Route::name('front.index')->get('/',function(){
+// 	return view("index");
+// });
+Route::get('/','IndexController@index');
+
 Route::get('/user', function(){
 	return view('welcome');
 })->middleware("token");
