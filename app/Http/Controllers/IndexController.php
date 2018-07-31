@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
 	public function Index(){
-		return view("index");
+		$array = array(
+			"title" => "首页",
+			"name"  => "matthew",
+			"sex"   => "man",
+			"age"   => "27"
+			);
+		return view("index")->with("array",$array);
 	}
 }
