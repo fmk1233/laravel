@@ -28,4 +28,4 @@ Route::get('/token', function(){
 })->middleware("token");
 
 //定义资源路由
-Route::resourece('user', 'UserController');
+Route::resource('user', 'UserController');
