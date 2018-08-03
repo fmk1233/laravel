@@ -15,4 +15,9 @@ class IndexController extends Controller
 			);
 		return view("index")->with("array",$array);
 	}
+
+	public function form(){
+
+		return $_POST;
+	}
 }
