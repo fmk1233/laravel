@@ -1,7 +1,6 @@
 @extends('layouts.default')
 
 @section('content')
-<meta name="csrf-token" content="{{ csrf_token }}"
 	<h1>laravel首页</h1>
 	<h2>{{$array['name']}}</h2>
 	<h2>{{$array['sex']}}</h2>
