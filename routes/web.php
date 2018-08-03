@@ -22,6 +22,8 @@
 //定义单个路由绑定控制器的方法
 Route::get('/','IndexController@index');
 
+Route::get('/form','IndexController@form');
+
 //路由配中间件
 Route::get('/token', function(){
 	return view('welcome');
