@@ -31,3 +31,6 @@ Route::get('/token', function(){
 
 //定义资源路由
 Route::resource('user', 'UserController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
