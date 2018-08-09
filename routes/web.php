@@ -36,5 +36,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('users/{id}',function($id){
-	return 'User'.$id;
+	// return 'User'.$id;
+	dd($id);
 });
